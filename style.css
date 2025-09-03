@@ -5,4 +5,12 @@
         url("/fonts/norse_bold_font-webfont.woff2")format("woff2");
 
 }
-
+:root {
+    --light-border-grey: #e5e7eb;
+    --main-font: arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
