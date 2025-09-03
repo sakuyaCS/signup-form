@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "norse-bold-font";
+  src:  url("/fonts/norse-bold-font.otf") format("opentype"),
+        url("/fonts/norse_bold_font-webfont.woff")format("woff"),
+        url("/fonts/norse_bold_font-webfont.woff2")format("woff2");
+
+}
+
