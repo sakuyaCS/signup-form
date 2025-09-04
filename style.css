@@ -20,17 +20,9 @@
 }
 
 .odin-sidebar {
+    display: flex;
     flex-basis: 35%;
-}
+    flex-direction: column;
 
-.content-container {
-    flex-basis: 65%;
-    display: flex;
-    flex-direction: column; /* for stacking elements */
-}
-
-.inputs-grid { /*container of input-group */
-    display: flex;
-    flex-wrap: wrap;
 }
 
