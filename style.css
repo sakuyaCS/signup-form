@@ -17,10 +17,33 @@
     min-height: 100vh;
 }
 
+.overlay {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 284px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
 .odin-sidebar { 
+    position: relative;
     display: flex;
     flex-basis: 35%;
     flex-direction: column;
+    justify-content: flex-end;
+    background-image: url('images/JPEG\ image.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+.image-credit {
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 5px;
+    padding-left: 32px;
 }
 
 .content-container {
@@ -52,7 +75,8 @@
 }
 
 form {
-    max-width: 700px;
-    width: 100%;
+    max-width: 700px; /* never wider than 700px */
+    width: 100%; /* take up 100% of ur parent container */
 }
+
 
