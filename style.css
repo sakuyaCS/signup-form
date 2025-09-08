@@ -17,6 +17,10 @@
     min-height: 100vh;
 }
 
+.header-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .overlay {
     position: absolute;
     top: 130px;
@@ -26,12 +30,21 @@
     background-color: rgba(0, 0, 0, 0.5)
 }
 
+.odin-logo h1 {
+    position: absolute;
+    font-family: "norse-bold-font";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+}
+
 .odin-sidebar { 
     position: relative;
     display: flex;
     flex-basis: 35%;
     flex-direction: column;
-    justify-content: flex-end;
     background-image: url('images/JPEG\ image.jpeg');
     background-size: cover;
     background-position: center;
@@ -39,11 +52,14 @@
 }
 
 .image-credit {
+    position: absolute;
+    font-family: sans-serif;
     color: white;
-    position: relative;
     z-index: 1;
-    padding-bottom: 5px;
-    padding-left: 32px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .content-container {
@@ -65,7 +81,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    padding: 0 3rem;
 }
+
 
 .input-group {
     display: flex;
@@ -73,10 +91,35 @@
     flex: 1 1 45%;
     gap: 0.5rem;
 }
-
-form {
-    max-width: 700px; /* never wider than 700px */
-    width: 100%; /* take up 100% of ur parent container */
+input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid red;
+    background-color: #ffe6e6;
 }
 
 
+input[type="password"]:valid {
+    border: 2px solid green;
+}
+
+input[type="password"]:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+
+
+form { 
+    width: 100%; /* take up 100% of ur parent container */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-content h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+
+.form-content {
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: -3rem;
+    margin-right: -3rem;
+}
