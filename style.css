@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 
-.main-container { /*flex container to be able to make sidebar flex */
+.main-container {
     display: flex;
     min-height: 100vh;
 }
@@ -87,6 +87,26 @@
     margin-right: -3rem;
 }
 
+input {
+    border: 1px solid #d1d5db;
+    outline: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    transition: border 90ms ease;
+}
+
+input:focus {
+    border: 1px solid #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,0,0, 0.1);
+
+}
+
+input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid #ef4444;
+    background-color: #fef2f2;
+}
+
 .input-grid {
     display: flex;
     flex-wrap: wrap;
@@ -104,16 +124,6 @@
 input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
     border: 2px solid red;
     background-color: #ffe6e6;
-}
-
-
-input[type="password"]:valid {
-    border: 2px solid green;
-}
-
-input[type="password"]:focus {
-    border: 2px solid blue;
-    outline: none;
 }
 
 
