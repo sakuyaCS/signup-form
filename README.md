@@ -6,6 +6,9 @@ A responsive sign-up form built as part of The Odin Project's Intermediate HTML 
 
 This project recreates a sign-up form design with a sidebar and functional form validation. I built it to practice CSS layout techniques, form handling, and responsive design principles.
 
+## Live Preview
+https://sakuyacs.github.io/signup-form/
+
 ## What I Learned
 
 - **CSS Flexbox**: Used flexbox for the main layout and form grid
